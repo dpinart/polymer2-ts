@@ -38,6 +38,8 @@ function property(options) {
             propConfig.notify = true;
         if (reflect)
             propConfig.reflectToAttribute = true;
+        if (options && options.statePath)
+            propConfig.statePath = options.statePath;
         proto.constructor.__polymer_ts_config[propName] = propConfig;
         if (!proto.constructor.hasOwnProperty('properties')) {
             Object.defineProperty(proto.constructor, 'properties', {

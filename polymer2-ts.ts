@@ -42,6 +42,7 @@ function property<T>(options?: PropertyOptions) {
         if (type) propConfig.type = true;
         if (notify) propConfig.notify = true;
         if (reflect) propConfig.reflectToAttribute = true;
+        if(options && options.statePath) propConfig.statePath = options.statePath;
 
         proto.constructor.__polymer_ts_config[propName] = propConfig;
 
@@ -128,4 +129,5 @@ interface PropertyOptions {
     notify?: boolean;
     reflectToAttribute?: boolean;
     readOnly?: boolean;
+    statePath?: string | Function;
 }
