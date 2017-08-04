@@ -13,10 +13,10 @@
   "main": "polymer2-ts.html",
   "repository": {
     "type": "git",
-    "url": "git@github.com:LssPolymerElements/polymer2-ts.git"
+    "url": "git@github.com:dpinart/polymer2-ts.git"
   },
   "license": "https://opensource.org/licenses/MIT",
-  "homepage": "https://github.com/LssPolymerElements/polymer2-ts",
+  "homepage": "https://github.com/dpinart/polymer2-ts",
   "ignore": [
     "node_modules",
     "bower_components",
